@@ -21,21 +21,26 @@ var movie = [
     }
 ]
 
-// for each
+function buildString(movie) {
+    // for each
+
+       var result = "";
+
+        if (element.hasWatched) {
+            result += "You have watched ";
+        }
+        else {
+            result += "You have not watched ";
+        }
+        result += "\"" + element.name + "\" - " + element.rating + " stars";
+        console.log(result)
+
+}
 
 movie.forEach(function (element) {
-    var result = "";
-
-    if (element.hasWatched) {
-        result += "You have watched ";
-    }
-    else {
-        result += "You have not watched ";
-    }
-    result += "\"" + element.name + "\" - " + element.rating + " stars";
-    console.log(result)
-
+    console.log(buildString(movie));
 });
+
 
 
 /*// for loop
